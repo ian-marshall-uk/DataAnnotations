@@ -51,6 +51,15 @@
   <ItemGroup>
     <Compile Include="Author.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Migrations\201808311615485_InitialModel.cs" />
+    <Compile Include="Migrations\201808311615485_InitialModel.Designer.cs">
+      <DependentUpon>201808311615485_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808311620027_AddAnnotationsToCourseTable.cs" />
+    <Compile Include="Migrations\201808311620027_AddAnnotationsToCourseTable.Designer.cs">
+      <DependentUpon>201808311620027_AddAnnotationsToCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +70,14 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808311615485_InitialModel.resx">
+      <DependentUpon>201808311615485_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808311620027_AddAnnotationsToCourseTable.resx">
+      <DependentUpon>201808311620027_AddAnnotationsToCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
